@@ -1,0 +1,20 @@
+Veja as alternativas abaixo.
+
+Qual é a classe correta para definir os números entre 1 e 3 E 6 e 9?
+
+A - [1-3-6-9]
+    Errado, o hífen entre os números 3 e 6 está errado.
+
+B- [1-36-9]
+    Correto!
+
+
+C - {1-36-9}
+    Errado, para definir a classe devemos usar [].
+
+D - [\1-\3\6-\9]
+    Errado, não devemos escapar os números dentro de classes, pois não é preciso escapar dentro da classe.
+
+
+Com : [1-36-9]
+Definimos uma classe com os números de 1-3 e 6-9!
