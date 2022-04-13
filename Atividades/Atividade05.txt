@@ -1,0 +1,19 @@
+Na aula e nos últimos exercícios já vimos alguns exemplos de expressões regulares. Com isso, avalie as seguintes opções:
+
+A) Extraindo seções específicas de um arquivo de texto
+
+
+B) Validação de formatação de, por exemplo, e-mail ou telefone
+
+
+C) Análise de arquivos de texto e extração de dados para, por exemplo, gravar no banco de dados
+
+
+D) Substituindo os valores de um texto para limpar, reformatar ou alterar o conteúdo
+
+
+Dentre essas opções, quais alternativas correspondem às possibilidades utilizando RegEx?
+
+Todas as alternativas estão corretas e representam exemplos clássicos para utilizar expressões regulares.
+
+No entanto, é importante lembrar que uma expressão regular faz a análise de um determinado padrão de caracteres em uma string. Podemos usar esse padrão para por exemplo validar um email ou telefone. Para saber se o email realmente existe e validar a autenticidade do email uma regex não serve.
