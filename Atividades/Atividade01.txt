@@ -1,0 +1,5 @@
+O mais importante nesse curso é praticar! Como qualquer linguagem nova é preciso aprender o novo vocabulário e a gramática. Em cada capítulo preparamos alguns exercícios para poder fixar o conteúdo. Segue a tarefa desse exercício:
+
+Baseado no que aprendemos, defina a expressão regular para encontrar um CNPJ, por exemplo: 15.123.321/8883-22
+
+Você pode usar o nosso "testador de regex" para experimentar. Mãos à obra!
