@@ -1,0 +1,17 @@
+Os textos e exercícios na Alura usam uma formatação para deixar uma parte em negrito, itálico ou para mostrar que se trata de código. Na primeira versão da Alura era necessário usar tags HTML no texto para essa formatação. Por exemplo, veja uma de um exercício antigo:
+
+No <code>for</code>, o valor de <code>i</code> começa de zero e é incrementado a cada volta enquanto <code>i < 10</code>, portando o bloco de código do for é executado 10 vezes.
+
+A sua tarefa agora é criar uma regex que procurará o <code> ou </code> dentro do alvo acima. Mãos à obra!
+
+------------------------------
+
+A regex utilizada é: </?code>
+
+------------------------------
+
+Isso foi um exemplo real do Alura, usamos essa regex para substituir </?code>com o char backtick. A nova formatação do Alura se chama de Markdown, ou seja, o texto que usava <code> se tornou:
+
+No `for`, o valor de `i` começa de zero e é incrementado a cada volta enquanto `i < 10`, portando o bloco de código do for é executado 10 vezes.
+
+Veremos ainda como podemos substituir uma string através de uma regex!!

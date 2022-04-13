@@ -1,0 +1,14 @@
+\d = Digito.
+\d{1} = primeiro Digito.
+\d{0,4} = 0 ou quatro dígitos.
+
+\. = ponto
+\.? = pode ter ou pode também não ter.
+
+- = pode ser digitado normalmente
+
+[] funcionam também como digitos
+[0-9] quer dizer que teremos dígitos de 0 a 9
+[-.] = se tiver "-" ou "."
+
+
