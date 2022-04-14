@@ -1,0 +1,17 @@
+Laudilene, é professora de filosofia, amiga de Gilberto, professor de física. Ambos dão uma "colher de chá" para seus alunos. No caso de Laudi, ela dá até meio ponto para que seus alunos atinjam a média 8 para serem aprovados.
+
+Depois de calcular as médias das provas dos alunos, Laudi, muito cansada, lançou todas as médias em um arquivo texto:
+
+10 - Bruce, 9.5 - Miranda, 7.9    - Bob, 10 - Zimbabue, 7.5 - Bety
+
+Para extrairmos a nota e o nome de alunos elegíveis para receberem até meio ponto podemos usar a expressão.
+
+[7]\.[5-9] - \w+
+
+Contudo, se copiarmos e colocarmos a linha com as médias do aluno em nosso testador de expressão e usarmos a expressão acima, recebemos como "match" apenas
+
+7.5 - Bety
+
+Coitado de Bob! Ele tem direito também!
+
+Explique por que a nota e o nome de Bob não entraram na seleção e proponha um solução alterando a expressão regular utilizada.
