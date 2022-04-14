@@ -1,0 +1,33 @@
+Gilberto é professor de física em um colégio cuja média para passar é 8. Aliás, uma média bem alta. Contudo, este professor é amigo dos alunos, e costuma aprovar aqueles que conseguem notas de 7.2 a 7.9 (quem dera eu ter tido um professor desses).
+
+Ajude Gilberto e, claro, seus alunos, separando do arquivo CSV os nomes e as notas dos alunos que tiraram de 7.2 a 7.9 para que o professor "camarada" possa aprová-los!
+
+9.8 - Robson, 7.1 - Teresa, 4.5 - Armênio, 6.5 - Zulu, 7.7 - Stefania, 7.8 - João, 5.0 - Romeu, 7.2 - Pompilho, 3.1 - Reinaldo, 7.3 - Bernadete, 4.7 - Cinério 
+
+Use o avaliador de expressão regular disponibilizado pelo curso.
+
+7.[2-9]\s+-\s+\w+ Não funciona para o aluno João
+
+O correto para esse caso em particular seria 7.[2-9]\s+-\s+[A-Z][a-zã]+
+
+
+
+
+Vejamos! Queremos pegar todo mundo que comece com nota 7.
+
+7\.
+
+Lembre-se que precisamos escapar o . usando um \ antes por ele ser um meta char. Agora, vamos definir nossa própria classe usando colchetes. Nela, precisamos aceitar somente um número de 2 a 9:
+
+7\.[2-9]
+
+Perfeito, com isso temos as possibilidades 7.2,7.3,7.4,7.5,7.6,7.7, 7.8 e 7.9.
+
+Sabemos que depois do número, temos um espaço e um hífen seguido de espaço:
+
+7\.[2-9]\s+-\s+ 
+
+
+Por fim, depois do hífen queremos pegar qualquer quantidade de caracteres que estejam antes da vírgula, por isso usaremos [^,]+ que pega qualquer dígito que não seja uma vírgula, seja ele letra ou número:
+
+7\.[2-9]\s+-\s+[^,]+
