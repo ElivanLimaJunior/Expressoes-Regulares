@@ -12,3 +12,26 @@
 [-.] = se tiver "-" ou "."
 
 
+O primeiro caractere é um espaço branco.
+\s - significa whitespace
+\t é um tab.
+\r é carriage return.
+\n é newline.
+\f é form feed.
+
+O símbolo + é um outro atalho para definir a quantidade e agora já conhecemos todos:
+
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.
+
+Classes de letras
+Para descrever o mês, devemos usar uma nova classe de letras, seguem alguns exemplos:
+
+[A-Z] significa de A até Z, sempre maiúscula.
+[a-z] significa de a até z, sempre minúscula,
+[A-Za-z] significa A-Z ou a-z.
+[abc] significa a, b ou c.
