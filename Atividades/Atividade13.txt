@@ -1,0 +1,18 @@
+Temos a seguinte linha:
+
+BALEIRO GARROTE SERROTE GOLEIRO ROTEIRO 
+
+Escreva uma expressão regular que faça match apenas com as palavras GARROTE, SERROTE e ROTEIRO. Não esqueça de usar nossa ferramenta para testar nossas expressões regulares.
+
+
+
+
+
+Opinião do instrutor
+
+Uma solução possível é:
+
+[A-Z]*ROT[A-Z]+COPIAR CÓDIGO
+
+
+Veja que usamos a classe de caracteres [A-Z] porque queremos lidar apenas com todas as letras em maiúsculo. Além disso, na primeira parte da expressão temos [A-Z]*, usamos o quantifier * que indica zero ou mais vezes. Por fim temos [A-Z]*ROT[A-Z]+.
