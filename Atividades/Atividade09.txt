@@ -1,0 +1,11 @@
+Fomos contratados para desenvolver um sistema para cadastros de veículos em um estacionamento. Para isso, precisaremos cadastrar as placas dos veículos no sistema e para fazer a validação usaremos expressão regular.
+
+Como seria a expressão regular que devemos usar para validarmos a placa de um carro?
+
+Exemplo de placa: KMG-8089
+
+Primeiro deve definir as 3 letras maiúsculas: [A-Z]{3}
+
+Agora só falta o hífen e os 4 dígitos, a regex completa fica:
+
+[A-Z]{3}-\d{4}
