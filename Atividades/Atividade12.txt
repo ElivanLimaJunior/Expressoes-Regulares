@@ -1,0 +1,34 @@
+Laudilene, é professora de filosofia, amiga de Gilberto, professor de física. Ambos dão uma "colher de chá" para seus alunos. No caso de Laudi, ela dá até meio ponto para que seus alunos atinjam a média 8 para serem aprovados.
+
+Depois de calcular as médias das provas dos alunos, Laudi, muito cansada, lançou todas as médias em um arquivo texto:
+
+10 - Bruce, 9.5 - Miranda, 7.9    - Bob, 10 - Zimbabue, 7.5 - Bety
+
+Para extrairmos a nota e o nome de alunos elegíveis para receberem até meio ponto podemos usar a expressão.
+
+[7]\.[5-9] - \w+
+
+Contudo, se copiarmos e colocarmos a linha com as médias do aluno em nosso testador de expressão e usarmos a expressão acima, recebemos como "match" apenas
+
+7.5 - Bety
+
+Coitado de Bob! Ele tem direito também!
+
+Explique por que a nota e o nome de Bob não entraram na seleção e proponha um solução alterando a expressão regular utilizada.
+
+
+
+
+
+
+Veja o texto com as médias digitado por Laudi:
+
+10 - Bruce, 9.5 - Miranda, 7.9    - Bob, 10 - Zimbabue, 7.5 - Bety
+
+Veja que sem querer, ela adicionou mais de um espaço separando a nota de Bob do hífen. Esse pequeno detalhe foi suficiente para que nossa expressão [7]\.[5-9] - \w+ não fosse capaz de adicionar a nota de Bob na seleção. Tudo isso porque usamos um espaço antes do hífen e um espaço depois. Poderíamos até corrigir no arquivo original, mas se Laudi errar novamente?
+
+Vamos alterar nossa expressão regular para considerar um ou mais espaços (inclusive tab) antes do hífen e depois. Para isso usamos \s+. Alterando nossa expressão:
+
+[7]\.[5-9]\s+-\s+\w+
+
+Lembre-se que \s é um atalho para espaços, tab's e que o + significa um ou mais.
