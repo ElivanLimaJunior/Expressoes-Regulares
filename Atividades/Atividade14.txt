@@ -1,0 +1,5 @@
+Dada a seguinte regex, que encontra o número de um CPF: ^\d{3}\.\d{3}\.\d{3}-\d{2}$. Qual das strings abaixo é compatível com ela?
+
+Resposta correta: 111.111.111-11
+
+Como foi visto no capítulo, o circunflexo (^) é uma âncora e garante que na string nada deve vir antes, por isso a string CPF: 111.111.111-11 não é compatível, pois antes do número do CPF há o trecho CPF:. Já o $ é o contrário, nada na string deve vir depois, por isso a string 111.111.111-11 é o número do meu CPF também não é compatível, pois depois do número do CPF há o trecho é o número do meu CPF.
