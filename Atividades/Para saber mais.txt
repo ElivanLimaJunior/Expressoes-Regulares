@@ -1,0 +1,47 @@
+Vimos na aula o âncora\b (word boundary) para selecionar a posição antes ou depois de uma palavra.
+
+Existe a inversão do \b, o non-word-boundary: \B (B maiúsculo)
+
+Para entender melhor é sempre bom o exemplo prático. Experimente no nosso testador:
+
+Alvo: português proporcional compor
+
+Pattern: \Bpor\B
+
+
+https://s3.amazonaws.com/caelum-online-public/regex/ambiente-por.png
+
+
+Opinião do instrutor
+
+
+A nossa regex seleciona a sílaba por, e antes e depois dela, deve ter um Non word boundary. Em outras palavras, a silaba por deve aparecer dentro de uma palavra, nunca no inicio ou fim.
+
+https://s3.amazonaws.com/caelum-online-public/regex/ambiente-non-word-boundary.png
+
+
+
+
+
+
+
+ Para saber mais: Âncoras no Python
+
+ Um uso ainda mais prático de âncoras e regex no desenvolvimento web é no framework Django que utiliza como linguagem o Python.
+
+Por exemplo, podemos definir uma rota, ou seja, a URL requisitada, dessa maneira:
+
+
+regex_url = r'(.*/exercises/\d+/answer/\d+)$'
+
+Repare que usamos uma âncora no final, além de usar a classe de dígitos \d.
+
+Opinião do instrutorNessa regex, definimos uma URL possível para o nosso sistema. Se você reparar, é uma parte da URL aqui do alura que aparece na página de resposta de um exercício. Não queremos que tenha nada depois do número da resposta, e então colocamos a âncora $. A URL abaixo é aceita:
+
+https://cursos.alura.com.br/courses/expressoes-regulares2/sections/3/exercises/15179/answer/4766568
+
+Porém essa não:
+
+https://cursos.alura.com.br/courses/expressoes-regulares2/sections/3/exercises/15179/answer/4766568/aluno
+
+Temos cursos aqui no alura tanto de Python quanto de Django. Nos dois nós usamos regex de diversos tipos para definir nossas rotas e validar strings.

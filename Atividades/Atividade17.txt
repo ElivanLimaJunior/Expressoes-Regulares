@@ -1,0 +1,23 @@
+Temos a seguinte regex:
+
+.*\.html$
+
+Ela captura uma página html, seja o nome de um arquivo, uma url de uma página, etc... Qual das strings abaixo não será capturada pela regex?
+
+
+
+exercicio.html
+
+Alternativa correta
+https://cursos.alura.com.br/curso.html
+
+Alternativa correta
+Leonardo criou a página meu-site.html
+
+Alternativa correta
+index.htmlx
+
+
+
+
+A string index.htmlx não será capturada pois a regex, através da âncora $, não admite nada após a expressão .html.
