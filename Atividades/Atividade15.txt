@@ -1,0 +1,20 @@
+Temos aqui um erro que aconteceu em um sistema:
+
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+Sabendo que o erro sempre começa com a expressão Caused by:, faça uma regex que capture-o.
+
+
+
+
+
+
+
+
+
+Um regex simples que pode ser feita é:
+
+^Caused by:.*
+
+A âncora ^ garantirá que, na string, nada deve vir antes de Caused by:, ou seja, a string deve começar com essa expressão. A seguinte string não seria válida, por exemplo: Error Caused by:
+
