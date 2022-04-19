@@ -1,0 +1,16 @@
+Ao trabalharmos com datas, é bem comum visualizá-las em diversos formatos, como, por exemplo, 20 de maio de 2015 ou 20 maio 2015. Para o nosso sistema, a preposição de não faz tanto sentido quanto para o usuário e, portanto, podemos ignorá-la. Sabemos que podemos pedir ao Regex Engine para que não devolva nenhum grupo específico através de non-capturing groups.
+
+O que queremos então é pedir ao Regex Engine para que não devolva o grupo formado pelo de e por um whitespace (\s). Qual das opções abaixo faz um uso correto dos non-capturing groups?
+
+elecione uma alternativa
+
+{?:de\s+}
+
+
+<?:de\s+>
+
+
+[?:de\s+]
+
+
+(?:de\s+)?
